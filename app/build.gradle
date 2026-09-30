@@ -6,7 +6,6 @@ plugins {
 android {
     namespace = "com.radar.stealth"
     compileSdk = 34
-
     defaultConfig {
         applicationId = "com.radar.stealth"
         minSdk = 28
@@ -15,18 +14,11 @@ android {
         versionName = "1.0"
     }
     buildTypes {
-        release {
-            isMinifyEnabled = false
-        }
-        debug {
-            isDebuggable = true
-        }
+        release { isMinifyEnabled = false }
+        debug { isDebuggable = true }
     }
     buildFeatures {
-        compose = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.14"
+        buildConfig = true
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
